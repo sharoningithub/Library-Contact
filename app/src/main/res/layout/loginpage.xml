@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textColorHint="#95A1AA"
+        android:ems="10"
+        android:id="@+id/login_name"
+        android:singleLine="true"
+        android:layout_marginBottom="57dp"
+        android:layout_above="@+id/login_pwd"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="PassWord"
+        android:textColorHint="#95A1AA"
+        android:id="@+id/login_pwd"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/login_name"
+        android:layout_alignStart="@+id/login_name" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Login"
+        android:textColor="#e88b15"
+        android:id="@+id/login_button"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/login_pwd"
+        android:layout_alignStart="@+id/login_pwd"
+        android:layout_marginBottom="137dp"
+        android:layout_alignRight="@+id/login_pwd"
+        android:layout_alignEnd="@+id/login_pwd" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/login_icon"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+
+</RelativeLayout>
